@@ -1,87 +1,60 @@
-Daniel Mayer  
-dan@mayerdan.com  
-503-819-3246  
-821 Maryland Ave NE #305  
-Washington, DC 20002  
+Ian Johnson
+---------------  
+enjalot@gmail.com  ...  850-322-3195  ...  [Blog](http://enja.org)  ...  [GitHub](http://github.com/enjalot)  
 
-[GitHub](http://github.com/danmayer)  
-[Blog](http://mayerdan.com)  
+Education
+---------------  
+Florida State University  
+B.S. Applied Mathematics  
+B.A. Chinese Language  
+GPA: 3.63/4.00  
+
+Research
+---------------
+* Real Time Particle Systems for educational games including interactive fluid simulations
+* General Purpose GPU programming
+* OpenCL tutorials featured on the Khronos.org tutorial website
+
+Work Experience
+---------------
+__Teacher Assistant__
+Aug. 2009 - Present
+
+* Introduction to Web Design
+* Introduction to Game and Simulator Design, two semesters
+
+__Geographic Information Systems and Web Programmer__  
+Oct. 2003 - Aug. 2009  
+Florida Resources and Environmental Analysis Center  
+
+* Designed and implemented an infrastructure for creating web services that give access to spatial data and spatial queries
+* Led a team of developers deploying web mapping applications for clients
+* Contributed with team to the open source project we use, OpenLayers.org
+
+__Resident Assistant__  
+June – Aug. 2007  
+Study Abroad in China, Florida State University  
+
+* Assistant to the program director 
+* Translator and guide for the 60 students in the program 
+* Escort students to the hospital, post office and train station 
+* Configured internet service for the students 
+* Organized a traditional Chinese Calligraphy class by hiring a calligrapher
+
+Leadership
+----------------
+
+* Founder and President of Chinese Language and Culture Association, FSU
+  * Brought together Chinese and American students for educational and social events 
+* Director of the Asian American Student Union, FSU 
+  * Lead a team of students to coordinate multi-cultural events 
+  * Managed a $25,000 budget
 
 Skills
 ----------------
 
-* Ruby
-  * Rails
-  * Sinatra
-  * Merb
-  * EventMachine
-  * DataMapper
-  * Custom EventMachine-based protocols
+Language: English (fluent), Dutch (fluent), Mandarin (conversational)  
+Computing: Linux, Windows, OS X  
+Programming: Python, C++, Java, OpenCL, OpenGL  
+Tools: Amazon Web Services, Apache, PostgreSQL  
 
-* Tools
-  * Linux
-  * OS X
-  * Javascript (JQuery/Prototype)
-  * HTML
-  * Amazon Web Services (Ec2, SimpleDB, S3, SQS)
-  * Distributed Computing
-  * Apache
-  * MySQL
-  * PostgreSQL
-  * Schemaless DBs (NoSql)
-  * RESTul webservice API's
-
-* Style
-  * Pair Programming
-  * Test-Focused Development
-  * Distributed Teams
-  * Agile team management
-  * Contributor to Ruby OSS software
-  * Active on Github
-
-Work Experience
----------------
-__LivingSocial__  
-Software Developer  
-June 2010 - Current  
-Working with a small team of developers to grow LivingSocial. Working on mobile apps, mobile site, APIs, and backend tools.  
-
-__Devver__  
-Founder / CTO / Ruby Software Developer  
-April 2008 - April 2010  
-Software startup to make the lives of developers easier. Originally developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  
-
-* Built accelerated testing tool, using distributed computing services to run developer tests
-* Developed a cloud-based continuous integration server and notification services
-* Developed cloud-based code metrics and analytics project analyzer, which integrated with Rubygems.org to provide analytics on all public Rubygems and many OSS git-based projects (7000+ projects)
-* Member of a distributed agile team -- practiced daily standups, remote pair programming, and continuous integration
-* Worked extensively with cloud based services and distributed computing techniques. (EC2, Beanstalkd queues, Schemaless SimpleDB, S3)
-* Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments
-
-__Pretheory__  
-Founder  
-May 2007 - April 2008  
-Small Denver-based consumer web startup. Built [Seekler.com](http://seekler.com) to help people find the best of everything online by user generated, community-based top 10 lists on topics or products. Seekler was a social way to rank things with friends or the entire community.  
-
-__Indigio__  
-Java Lead Engineer  
-August 2006 - May 2007  
-Developed web sites for Fortune 500 companies. Managed a small Java team with local and international remote employees.  
-
-* Developed and deployed large scale newspaper, real estate, and car rental companies Java sites
-
-
-__Impact Science & Technology (IST)__  
-Java Software Engineer  
-December 2005 - June 2006  
-Developed full lifecycle of a DOD distributed synchronous infrastructure in Java.  
-
-
-Education
----------------  
-University of Colorado  
-Boulder, CO  
-B.S., Computer Science  
-GPA: 3.185  
-
-_References available on request_  
