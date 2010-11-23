@@ -17,7 +17,7 @@ Research
 
 Work Experience
 ---------------
-__Teacher Assistant__
+__Teacher Assistant__  
 Aug. 2009 - Present
 
 * Introduction to Web Design
@@ -32,7 +32,7 @@ Florida Resources and Environmental Analysis Center
 * Contributed with team to the open source project we use, OpenLayers.org
 
 __Resident Assistant__  
-June – Aug. 2007  
+June - Aug. 2007  
 Study Abroad in China, Florida State University  
 
 * Assistant to the program director 
@@ -44,9 +44,9 @@ Study Abroad in China, Florida State University
 Leadership
 ----------------
 
-* Founder and President of Chinese Language and Culture Association, FSU
+* Founder and President of Chinese Language and Culture Association, FSU 2007-2008
   * Brought together Chinese and American students for educational and social events 
-* Director of the Asian American Student Union, FSU 
+* Director of the Asian American Student Union, FSU 2008-2009
   * Lead a team of students to coordinate multi-cultural events 
   * Managed a $25,000 budget
 
