@@ -5,9 +5,9 @@ enjalot@gmail.com  ...  850-322-3195  ...  [Blog](http://enja.org)  ...  [GitHub
 Education
 ---------------  
 Florida State University  
-M.A. Computational Science  Expected 2011
-B.S. Applied Mathematics    2009 
-B.A. Chinese Language       2009
+M.A. Computational Science  Expected 2011  
+B.S. Applied Mathematics    2009  
+B.A. Chinese Language       2009  
 
 Research
 ---------------
