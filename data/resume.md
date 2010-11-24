@@ -5,9 +5,9 @@ enjalot@gmail.com  ...  850-322-3195  ...  [Blog](http://enja.org)  ...  [GitHub
 Education
 ---------------  
 Florida State University  
-B.S. Applied Mathematics  
-B.A. Chinese Language  
-GPA: 3.63/4.00  
+M.A. Computational Science  Expected 2011
+B.S. Applied Mathematics    2009 
+B.A. Chinese Language       2009
 
 Research
 ---------------

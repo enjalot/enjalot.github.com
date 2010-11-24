@@ -39,7 +39,7 @@ class Resume
   end
 
   def html
-    title = "Dan Mayer's Resume"
+    title = "Ian Johnson's Resume"
     base = File.join(File.dirname(__FILE__),'..')
     resume = RDiscount.new(@resume_content, :smart).to_html
     eruby = Erubis::Eruby.new(File.read(File.join(base,'./views/index.erubis')))
