@@ -1,6 +1,8 @@
 Ian Johnson
 ---------------  
-enjalot@gmail.com  ...  850-322-3195  ...  [Blog](http://enja.org)  ...  [GitHub](http://github.com/enjalot)  
+enjalot@gmail.com  ...  850-322-3195
+[Blog](http://enja.org): http://enja.org
+[GitHub](http://github.com/enjalot): http://github.com/enjalot
 
 Education
 ---------------  
