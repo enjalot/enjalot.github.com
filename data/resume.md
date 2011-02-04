@@ -20,8 +20,9 @@ Work Experience
 __Teacher Assistant__  
 Aug. 2009 - Present
 
-* Introduction to Web Design
+* Programming with Scientific Applications
 * Introduction to Game and Simulator Design, two semesters
+* Introduction to Web Design
 
 __Geographic Information Systems and Web Programmer__  
 Oct. 2003 - Aug. 2009  
