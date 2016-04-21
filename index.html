@@ -2,145 +2,187 @@
 <head>
   <title>Ian Johnson</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  <!--
   <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-  -->
-  <style>
-    body {
-      padding: 20px;
-      color: #000000;
-      font-family: Roboto, sans-serif;
-    }
-    .name {
-      font-weight: bold;
-      font-size: 20px;
-    }
-    .contact {
-    }
-    .position {
-      font-weight: bold;
-
-    }
-    .company {
-      text-decoration: underline;
-    }
-    .date {
-      font-size: 14px;
-    }
-    .clearfix:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden;
-    }
-    #formats {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      background-color: #f2f2f2;
-    }
-    #footer {
-      width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #resume {
-      width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #resume blockquote {
-      border-left: 5px solid #dddddd;
-      margin: 1em 0;
-      padding-left: 0.6em;
-    }
-    #resume a {
-      color: #4183c4;
-      text-decoration: none;
-    }
-    #resume a:visited {
-      color: #4183c4;
-      text-decoration: none;
-    }
-    #resume a:hover { text-decoration: underline; }
-  </style>
+  <style></style>
 </head>
 <body>
-  <div id="resume">
-    <span class="name">Ian Johnson</span>
+  <div id="porftolio">
+    <div id="header">
+      <span class="title">
+        <img src="images/toon.jpg">
+        <span class="name">Ian Johnson</span>
+      </span>
       &nbsp;&nbsp;&nbsp;
-    <span class="contact">
-      enjalot@gmail.com &nbsp;&nbsp;&nbsp;
-      510-365-9427 &nbsp;&nbsp;&nbsp;
-    <a href="http://enja.org">Blog</a>&nbsp;&nbsp;&nbsp;
-    <a href="http://github.com/enjalot">GitHub</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/iandavidjohnson">LinkedIn</a>
-  </span>
+      <span class="contact">
+        <a href="/resume">Resume</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/enjalot">GitHub</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://medium.com/@enjalot">Medium</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/iandavidjohnson">LinkedIn</a>&nbsp;&nbsp;&nbsp;
+        <a href="http://enja.org/">Blog</a>
+      </span>
+    </div>
+    <div id="content">
+      <div class="headline">Tools</div>
+      <div class="description">
+        I enjoy making tools that improve data related workflows.
+        I really enjoy <a href="http://github.com/enjalot">working in the open</a> on tools that
+        have the potential to make many people more productive.
+      </div>
 
-    <h2>Work Experience</h2>
+      <div id="tools" class="section">
+        <div class="project">
+          <a href="http://blockbuilder.org">
+            <span class="project-title">
+              Blockbuilder
+            </span>
+            <img src="images/blockbuilder2.png">
+          </a>
+          <p>
+            Built an in-browser editor for quickly making, editing, remixing and sharing
+            <a href="https://d3js.org">d3.js</a> code examples.
+            <br>
+            <a href="https://github.com/enjalot/blockbuilder">Open source</a> and funded via
+            <a href="https://www.kickstarter.com/projects/1058500513/building-blocks-0">Kickstarter</a>.
+          </p>
+        </div>
+        <div class="project">
+          <a href="http://dataproofer.org">
+            <span class="project-title">
+              Dataproofer
+            </span>
+            <img src="images/dataproofer.png">
+          </a>
+          <p>
+            Helped build this app for quickly checking datasets for common errors.
+            <br>
+            <a href="https://github.com/dataproofer/dataproofer">Open source</a> and funded via the
+            <a href="http://www.knightfoundation.org/grants/201551675/">Knight Foundation</a>.
+          </p>
+        </div>
+      </div>
 
-    <p>
-      <span class="position">Design Technologist</span> &nbsp;&nbsp;&nbsp;
-    <span class="company"><a href="http://bl.ocks.org/enjalot">Freelance</a></span>
-    <br>
-    <span class="date">Jul. 2015 &ndash; Present</span>
-    </p>
-    <ul>
-    <li>Working on a variety of data visualization and app development projects.
-    </li>
-    </ul>
+      <div class="headline">d3.js community</div>
+      <div class="description">
+        I've always enjoyed bringing people together, especially when it comes to mixing my own interests in art and science.
+        <a href="https://d3js.org">d3.js</a> turns out to be a technology that attracts people with diverse backgrounds and open minds.
 
-    <p>
-      <span class="position">Data Alchemist</span> &nbsp;&nbsp;&nbsp;
-    <span class="company"><a href="https://lever.co">Lever</a></span>
-    <br>
-    <span class="date">Jul. 2012 &ndash; Jul. 2015</span>
-    </p>
-    <ul>
-    <li>Prototyping and developing data visualization tools. Worked with a small team to iterate on a variety of data visualization products.
-    </li>
-    </ul>
+      </div>
+      <div id="community" class="section">
+        <div class="project2">
+          <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">
+            <span class="project-title2">
+              Bay Area d3.js meetup
+            </span>
+            <img src="images/d3meetup.png">
+          </a>
+          <p>
+            Co-founded the meetup in Feb. 2012 and have grown it to over 4,000 members today.
+            We <a href="https://www.youtube.com/playlist?list=PL-_RDR0qu9VKm1FOWUsV5WMXp0p70kWk5">record and post</a>
+             as many of the talks as we can.
+            <br>
+            The screenshot is a <a href="http://enjalot.github.io/1024/">visualization of our first 1,024 members</a>.
+          </p>
+        </div>
+        <div class="project2">
+          <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">
+            <span class="project-title2">
+              d3.unconf
+            </span>
+            <img src="images/d3unconf.jpg">
+          </a>
+          <p>
+            Co-founded and co-organize this annual unconference where 100 d3.js practitioners
+             gather in San Francisco to discuss, learn and advance d3.js together.
+            <br>
+            Watch a <a href="https://www.youtube.com/watch?v=uIG6ox2d4JU">quick overview from 2015</a>
+            or read about organizing the <a href="https://medium.com/@enjalot/d3-unconf-2014-e1377d6d72a7#.d22pxd932">first one in 2014</a>
+          </p>
+        </div>
+      </div>
 
-    <p>
-      <span class="position">Software Engineer</span> &nbsp;&nbsp;&nbsp;
-      <span class="company"><a href="http://visual.ly">Visual.ly</a></span>
-      <br>
-      <span class="date">Aug. 2011 &ndash; Jun. 2012</span>
-    </p>
-    <ul>
-    <li>Prototyping and developing data visualization tools. Worked with a small team to iterate on a variety of data visualization products.
-    </li>
-    </ul>
+      <div class="headline">Data visualization</div>
+      <div class="section description">
+        Data visualization is an exciting area to work in because it brings together
+        communication and complexity, aesthetics and automation.
+        There is art and science involved in crafting an effective visualization, which makes it consistently interesting.
+      </div>
+      <div id="datavis" class="section">
+        <div class="project2">
+          <a href="http://blog.interviewing.io/technical-interview-performance-is-kind-of-arbitrary-heres-the-data/">
+            <span class="project-title2">Interviewing.io blog post</span>
+            <img src="images/interviewingio.png">
+          </a>
+          <p>
+            Helped develop an interactive visualization to help explain a data story about interview performance for
+            <a href="http://interviewing.io">interviewing.io</a>. See how each <a href="http://bl.ocks.org/enjalot/4562ac558aa8fb77269c">(1)</a>
+            iteration <a href="http://bl.ocks.org/enjalot/78e3a730e77c677e168c">(2)</a>
+            evolves <a href="http://bl.ocks.org/enjalot/735e92664d7d427132b2">(3)</a>.
+          </p>
+        </div>
+        <div class="project2">
+          <a href="https://www.lever.co/blog/four-design-principles-that-built-lever-reports">
+            <span class="project-title2">
+              Lever
+            </span>
+            <img src="images/lever.jpg">
+          </a>
+          <p>
+            I was the first hire at <a href="https://lever.co">Lever</a> where I helped
+            <a href="https://www.youtube.com/watch?v=yBbQIeQVLl8&index=3&list=PLI_sHchSmdCBg8aUrPl8VLgbkUbr-OLDn">
+            design and build the data infrastructure</a>
+            for the app, as well as numerous product features including
+            <a href="https://www.lever.co/blog/four-design-principles-that-built-lever-reports">Reports</a>.
+          </p>
+        </div>
+      </div>
+      <div id="datavis2" class="section">
+        <div class="project2">
+          <a href="https://www.youtube.com/watch?v=uZrTT-IBAA4&index=4&list=PLI_sHchSmdCBg8aUrPl8VLgbkUbr-OLDn">
+            <span class="project-title2">
+              Tremulous Hand of Worcestor
+            </span>
+            <img src="images/tremor.png">
+          </a>
+          <p>
+          This is an ongoing research project I'm working on with my <a href="http://www.english.fsu.edu/faculty/djohnson.htm">father</a>.
+          He is studying annotations by a particular monk on medieval manuscripts, so I wrote an app to help him
+          <a href="https://github.com/enjalot/tremulator">collect data</a>
+          and
+          <a href="http://bl.ocks.org/enjalot/35624de656351f8e4a5f">visualize it</a>
+          </p>
+        </div>
+        <div class="project2">
+            <a href="http://blog.interviewing.io/technical-interview-performance-is-kind-of-arbitrary-heres-the-data/">
+              <span class="project-title2">
+                How pinyin works
+              </span>
+              <img src="images/pinyin.png">
+            </a>
+            <p>
+              我会写中文，在大学学的。I learned some Mandarin in college and spent a few summers in 天津 (Tianjin).
+              I'm fascinated by Chinese writing systems and their computational implications.
+            </p>
+        </div>
+      </div>
 
-    <p><span class="position">Summer Student Intern</span> &nbsp;&nbsp;&nbsp;
-    <span class="company"><a href="http://www.lbl.gov/">Lawrence Berkeley National Laboratory</a></span>
-    <br>
-    <span class="date">Aug. 2009 &ndash; Aug. 2011</span>
-    </p>
-    <ul>
-    <li>Researching GPU computing in a distributed memory setting, using OpenCL and MPI. Specifically we are looking at particle advection for Computational Fluid Dynamics visualizations.</li>
-    </ul>
+      <div id="datavis3" class="section">
+        <div class="project2">
+          <a href="http://bl.ocks.org/enjalot">
+            <span class="project-title2">
+              Experiments
+            </span>
+            <img src="images/blocks.png">
+          </a>
+          <p>
+            As I develop visualizations and learn new web programming techniques
+            I practice with small examples collected in my bl.ocks.
+            <br>
+            I've <a href="https://medium.com/@enjalot/enjalots-data-driven-journey-286f21d82fcd#.lrlg0onlm">written about my practice here</a>.
+          </p>
+        </div>
 
-    <p>
-      <span class="position">GIS Web Programmer</span> &nbsp;&nbsp;&nbsp;
-    <span class="company"><a href="http://freac.fsu.edu">Florida Resources and Environmental Analysis Center</a></span>
-    <br/>
-    <span class="date">Oct. 2003 &ndash; Aug. 2009</span>
-    </p>
-
-    <ul>
-    <li>Designed and implemented an infrastructure for creating web services that give access to spatial data and spatial queries</li>
-    </ul>
-
-
-    <h2>Education</h2>
-    <p>
-    <b>Florida State University</b>
-      <br/>
-    2011 M.A. Computational Science<br/>
-    2009 B.S. Applied Mathematics, B.A. Chinese Language<br/>
-    </p>
+      </div>
+    </div>
 
   </div>
 </body>
