@@ -14,9 +14,12 @@ body {
   font-weight: bold;
   font-size: 55px;
   padding: 0px 20px;
+  margin-left: 50px;
 }
 .title img {
+  position: absolute;
   margin-left: 10px;
+  margin-top: 12px;
   height: 40px;
 }
 .contact {
@@ -49,7 +52,9 @@ body {
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 3px;
+  /*
   box-shadow: 0px 2px 9px 1px rgba(255,165,0, 0.1);
+  */
 }
 .headline {
   font-size: 36px;
@@ -59,7 +64,7 @@ body {
 .project, .project2 {
   width: 400px;
   min-height: 400px;
-  margin-top: 10px;
+  margin-top: 45px;
   line-height: 25px;
 }
 .project2 {
@@ -74,6 +79,7 @@ body {
 .project2 img {
   width: 400px;
   margin: 10px;
+  margin-top: 15px;
   box-shadow: 0px 7px 20px 3px rgba(100, 100, 100, 0.8);
 }
 .project-title {
@@ -90,15 +96,26 @@ body {
   margin-left: 16px;
 }
 
-#porftolio {
+#portfolio {
   width: 960px;
 }
-#porftolio a {
+#potfolio a {
   color: #4488ff;
   text-decoration: none;
 }
-#porftolio a:visited {
+#potfolio a:visited {
   color: #4488ff;
   text-decoration: none;
 }
-#porftolio a:hover { text-decoration: underline; }
+#potfolio a:hover { text-decoration: underline; }
+
+@media (max-width: 960px) {
+  #portfolio {
+    width: 100%;
+  }
+  #content {
+  }
+  .section {
+    display: block;
+  }
+}

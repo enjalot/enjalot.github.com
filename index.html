@@ -1,24 +1,25 @@
 <html>
 <head>
-  <title>Ian Johnson</title>
+  <title>Ian Johnson's Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
   <style></style>
 </head>
 <body>
-  <div id="porftolio">
+  <div id="portfolio">
     <div id="header">
       <span class="title">
         <img src="images/toon.jpg">
-        <span class="name">Ian Johnson</span>
+        <span class="name">Work</span>
       </span>
       &nbsp;&nbsp;&nbsp;
       <span class="contact">
-        <a href="/resume">Resume</a>&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/enjalot">GitHub</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/enjalot">Twitter</a>&nbsp;&nbsp;&nbsp;
         <a href="https://medium.com/@enjalot">Medium</a>&nbsp;&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/iandavidjohnson">LinkedIn</a>&nbsp;&nbsp;&nbsp;
-        <a href="http://enja.org/">Blog</a>
+        <a href="http://enja.org/">Blog</a>&nbsp;&nbsp;&nbsp;
+        <a href="/resume">Resume</a>&nbsp;&nbsp;&nbsp;
       </span>
     </div>
     <div id="content">
@@ -39,7 +40,9 @@
           </a>
           <p>
             Built an in-browser editor for quickly making, editing, remixing and sharing
-            <a href="https://d3js.org">d3.js</a> code examples.
+            <a href="https://d3js.org">d3.js</a> code examples. Implemented
+            <a href="http://blockbuilder.org/search">search for more than 12,000 examples</a>.
+            <br>
             <br>
             <a href="https://github.com/enjalot/blockbuilder">Open source</a> and funded via
             <a href="https://www.kickstarter.com/projects/1058500513/building-blocks-0">Kickstarter</a>.
@@ -55,8 +58,36 @@
           <p>
             Helped prototype and build this desktop app that quickly checks datasets for common errors.
             <br>
+            <br>
             <a href="https://github.com/dataproofer/dataproofer">Open source</a> and funded via the
             <a href="http://www.knightfoundation.org/grants/201551675/">Knight Foundation</a>.
+          </p>
+        </div>
+      </div>
+      <div id="tools2" class="section">
+        <div class="project">
+          <a href="http://blockbuilder.org">
+            <span class="project-title">
+              Tributary
+            </span>
+            <img src="images/tributary.png">
+          </a>
+          <p>
+            Before Blockbuilder there was <a href="">Tributary</a>, an
+            <a href="https://github.com/enjalot/tributary">open source</a>
+             in-browser editor for d3.js inspired directly by
+             <a href="http://worrydream.com/#!/InventingOnPrinciple">Bret Victor's Inventing on Principle</a>.
+          </p>
+        </div>
+        <div class="project">
+          <a href="http://enjalot.github.io/served/">
+            <span class="project-title">
+              Served
+            </span>
+            <img src="images/served.png">
+          </a>
+          <p>
+            A simple utility to help manage local web servers. Designed for simplifying front-end focused classes and workshops.
           </p>
         </div>
       </div>
@@ -96,6 +127,40 @@
             <br>
             Watch a <a href="https://www.youtube.com/watch?v=uIG6ox2d4JU">quick overview from 2015</a>
             or read about organizing the <a href="https://medium.com/@enjalot/d3-unconf-2014-e1377d6d72a7#.d22pxd932">first one in 2014</a>
+          </p>
+        </div>
+      </div>
+
+
+      <div id="community2" class="section">
+        <div class="project2">
+          <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">
+            <span class="project-title2">
+              Talks & Workshops
+            </span>
+            <img src="images/iantalking.jpg">
+          </a>
+          <p>
+            I've given many
+            <a href="http://enjalot.github.io/talks/">talks</a>
+            and
+            <a href="http://enjalot.github.io/intro-d3/">workshops</a>
+            about d3.
+            My most well known workshop is available as an online course on
+             <a href="https://frontendmasters.com/courses/interactive-data-visualization-d3-js/">Frontend Masters</a>.
+          </p>
+        </div>
+        <div class="project2">
+          <a href="https://www.youtube.com/user/enjalot">
+            <span class="project-title2">
+              YouTube Tutorials
+            </span>
+            <img src="images/youtube.png">
+          </a>
+          <p>
+             I also like to share my understanding via short video tutorials and demos. I've got more than
+             <a href="https://www.youtube.com/user/enjalot">100 videos</a>
+             covering various aspects of d3, web mapping and graphics programming.
           </p>
         </div>
       </div>
@@ -167,6 +232,19 @@
 
       <div id="datavis3" class="section">
         <div class="project2">
+          <a href="http://enjalot.github.io/bart/">
+            <span class="project-title2">
+              BART Strike
+            </span>
+            <img src="images/bart.png">
+          </a>
+          <p>
+            When BART service was stopped due to two strikes in 2013 I organized a series of meetups
+            to make visualizations that could help us understand the conflict.
+            A couple of the visualizations developed by participants were used in <a href="http://ww2.kqed.org/news/2013/10/17/data-visualization-BART-strike">news articles.</a>
+          </p>
+        </div>
+        <div class="project2">
           <a href="http://bl.ocks.org/enjalot">
             <span class="project-title2">
               Experiments
@@ -180,10 +258,27 @@
             I've <a href="https://medium.com/@enjalot/enjalots-data-driven-journey-286f21d82fcd#.lrlg0onlm">written about my practice here</a>.
           </p>
         </div>
+      </div>
 
+      <div class="headline">Future work</div>
+      <div class="description">
+        I'm interested in working on new products and visualizations that help
+        people implement and understand complex, data-related systems and workflows.
+        The following diagram attempts to capture where I'm most valuable in the process of creating a new product or visualization:
+        <img src="images/process.jpg" style="max-width:100%;">
+        <p>
+          I've found I am most effective early in the product-development process, especially in the <b>prototyping phase</b>.
+          The diagram shows the progression of an idea to <b>Minimum Viable Product</b> as I see it.
+          Often times the first question to follow an interesting idea is "Could this work?", and my favorite thing to do is
+          figuring out if it could. After figuring out that it does indeed work, the hard but neccessary part for me is developing
+          the functional prototype into some sort of minimum viable state that can be consumed by other stake-holders in the project.
+          There is of course still a lot that needs to happen before a product can ship, but ideally I'm prototyping the next idea.
+        </p>
+      </div>
+      <div class="description">
+        Interested in involving me in this part of your process? Reach out at <a href="mailto:enjalot@gmail.com">enjalot@gmail.com</a>
       </div>
     </div>
-
   </div>
 </body>
 </html>
