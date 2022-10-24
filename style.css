@@ -34,6 +34,7 @@ body {
   align-items: center;
   color: #111;
   border-radius: 2px;
+  font-size: 18px;
 }
 
 #contact {
@@ -61,39 +62,60 @@ body {
   margin-top: 60px;
   margin-left: 13px;
 }
-.project, .project2 {
+.work {
+  display: flex;
+  flex-direction: row;
+}
+.work p {
+  margin-top: 12px;
+  margin-left: 24px;
+  align-self: center;
+}
+.logo {
+  padding: 12px 12px;
+}
+.logo img {
+  width: 128px;
+}
+
+/* .project {
   width: 400px;
   min-height: 400px;
   margin-top: 45px;
   line-height: 25px;
 }
-.project2 {
-  margin-left: 5px;
-}
-
 .project img {
   width: 450px;
   margin-top: 10px;
+} */
+
+.project {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 5px;
 }
 
-.project2 img {
-  width: 400px;
-  margin: 10px;
-  margin-top: 15px;
-  box-shadow: 0px 7px 20px 3px rgba(100, 100, 100, 0.8);
+.project img {
+  width: 128px;
+  height: fit-content;
+  padding: 12px;
+  /* box-shadow: 0px 7px 20px 3px rgba(100, 100, 100, 0.8); */
 }
 .project-title {
   font-size: 20px;
   font-weight: bold;
   margin-left: 16px;
 }
+
 .project-title2 {
   font-size: 20px;
   font-weight: bold;
   margin-left: 10px;
 }
 .project p, .project2 p {
+  margin-top: 12px;
   margin-left: 16px;
+  align-self: center;
 }
 
 #portfolio {
@@ -109,12 +131,14 @@ body {
 }
 #potfolio a:hover { text-decoration: underline; }
 
+#content {
+  font-size: 24px;
+}
 @media (max-width: 960px) {
   #portfolio {
     width: 100%;
   }
-  #content {
-  }
+  
   .section {
     display: block;
   }

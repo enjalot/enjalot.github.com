@@ -1,6 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Ian Johnson's Portfolio</title>
+<meta charset="utf-8">  
+<title>Ian Johnson's Portfolio</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
   <style></style>
@@ -10,254 +12,149 @@
     <div id="header">
       <span class="title">
         <img src="images/toon.jpg">
-        <span class="name">Work</span>
+        <span class="name">Ian Johnson</span>
       </span>
       &nbsp;&nbsp;&nbsp;
       <span class="contact">
-        <a href="https://github.com/enjalot">GitHub</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://twitter.com/enjalot">Twitter</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://medium.com/@enjalot">Medium</a>&nbsp;&nbsp;&nbsp;
+        <a href="/resume">Resume (C.V.)</a>&nbsp;&nbsp;&nbsp; 
         <a href="https://www.linkedin.com/in/iandavidjohnson">LinkedIn</a>&nbsp;&nbsp;&nbsp;
-        <a href="/resume">Resume</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/enjalot">GitHub</a>&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;
+        🐦 <a href="https://twitter.com/enjalot">@enjalot</a>&nbsp;&nbsp;&nbsp;
+        
       </span>
     </div>
     <div id="content">
-      <div class="headline">Tools</div>
+      <!-- <div class="headline">Product Innovation</div> -->
       <div class="description">
-        I enjoy making tools that improve data related workflows.
-        I really enjoy <a href="http://github.com/enjalot">working in the open</a> on tools that
-        have the potential to make many people more productive.
+        I help world-class product teams ship complex software by prototyping interfaces for deep data problems.
       </div>
+      <div>
+        <div class="work">
+          <a href="https://observablehq.com" class="logo"><img src="images/observable.webp"></a>
+          <p>
+            At Observable I put my 10 years of data visualization experience towards developing and demonstrating advanced data workflows.
+            I've taught thousands of data practitioners via video, live workshops and interative learning materials.
 
-      <div id="tools" class="section">
-        <div class="project">
-          <a href="http://blockbuilder.org">
-            <span class="project-title">
-              Blockbuilder
-            </span>
-            <img src="images/blockbuilder2.png">
-          </a>
-          <p>
-            Built an in-browser editor for quickly making, editing, remixing and sharing
-            <a href="https://d3js.org">d3.js</a> code examples. Implemented
-            <a href="http://blockbuilder.org/search">search for more than 12,000 examples</a>.
-            <br>
-            <br>
-            <a href="https://github.com/enjalot/blockbuilder">Open source</a> and funded via
-            <a href="https://www.kickstarter.com/projects/1058500513/building-blocks-0">Kickstarter</a>.
           </p>
         </div>
-        <div class="project">
-          <a href="http://dataproofer.org">
-            <span class="project-title">
-              Dataproofer
-            </span>
-            <img src="images/dataproofer.png">
-          </a>
-          <p>
-            Helped prototype and build this desktop app that quickly checks datasets for common errors.
-            <br>
-            <br>
-            <a href="https://github.com/dataproofer/dataproofer">Open source</a> and funded via the
-            <a href="http://www.knightfoundation.org/grants/201551675/">Knight Foundation</a>.
-          </p>
+        <div class="work">
+          <a href="https://google.com" class="logo"><img src="images/google.png"></a>
+         <p>
+          At Google I spent 4 years on the design team prototyping and developing data visualization tools to better understand the 100+ products in Google Cloud. 
+          I collaborated with members of the Google Brain team to create interactive research publications.
+         </p>
         </div>
-      </div>
-      <div id="tools2" class="section">
-        <div class="project">
-          <a href="http://blockbuilder.org">
-            <span class="project-title">
-              Tributary
-            </span>
-            <img src="images/tributary.png">
-          </a>
+        <div class="work">
+          <a href="https://lever.co" class="logo"><img src="images/lever.jpeg"></a>
           <p>
-            Before Blockbuilder there was <a href="">Tributary</a>, an
-            <a href="https://github.com/enjalot/tributary">open source</a>
-             in-browser editor for d3.js inspired directly by
-             <a href="http://worrydream.com/#!/InventingOnPrinciple">Bret Victor's Inventing on Principle</a>.
-          </p>
-        </div>
-        <div class="project">
-          <a href="http://enjalot.github.io/served/">
-            <span class="project-title">
-              Served
-            </span>
-            <img src="images/served.png">
-          </a>
-          <p>
-            A simple utility to help manage local web servers. Designed for simplifying front-end focused classes and workshops.
+            A the first hire at Lever I designed & developed the original data infrastructure, product features
+            and internal tools. Many tools and data patterns that I designed were still in use when Lever was acquired for $500m.
           </p>
         </div>
       </div>
 
-      <div class="headline">d3.js community</div>
+
+      <div class="headline">Open Source, Open Science & Open Data</div>
+
+      <div class="project">
+        <img src="images/distill.png">
+        <p>
+          <a href="https://distill.pub">Distill</a> was a scientific journal for publishing interactive Machine learning research. 
+          I co-authored <a href="https://distill.pub/2016/misread-tsne">How to Use t-SNE Effectively</a>,
+          <a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a>,
+          <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a>,
+          and <a href="https://distill.pub/2019/activation-atlas">Activation Atlas</a>
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="images/cat.png">
+        <p>
+          Wrote <a href="https://cloud.google.com/blog/products/gcp/drawings-in-the-cloud-introducing-the-quick-draw-dataset">Introducing the Quick, Draw! Dataset</a>,
+          working with the Google Creative Lab to <a href="https://quickdraw.withgoogle.com/data">open source the dataset</a> 
+          and with Google Brain to demo the <a href="https://magenta.tensorflow.org/sketch-rnn-demo">SketchRNN</a> model.
+          I gave a talk at OpenVisConf about what I learned in <a href="https://medium.com/@enjalot/machine-learning-for-visualization-927a9dff1cab">Machine Learning for Visualization</a>.
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="images/blockbuilder2.png">
+        <p>
+          <a href="https://blockbuilder.org/">Block Builder</a> was an in-browser editor for quickly making, editing, remixing and sharing
+          <a href="https://d3js.org">d3.js</a> code examples. Launched via Kickstarter it supported the curation of more than <a href="https://observablehq.com/@enjalot/blockbuilder-search-data">40,000 community examples</a>.
+          
+        </p>
+      </div>
+
+      <div class="project">
+        <img src="images/tremor.png">
+        <p>
+          I love collecting, exploring and visualizing data! I started the 
+          <a href="https://observablehq.com/@observablehq/curated-datasets">Observable Curated Datasets</a> project, 
+          and have worked on 
+          <a href="https://observablehq.com/@enjalot/california-fire-maps-workbook">Wildfire data</a>, <a href="https://observablehq.com/@enjalot/purpleair-historical-data">Air quality data</a>,
+          <a href="https://observablehq.com/@codingwithfire/emojis">Emoji data</a>,
+          <a href="https://observablehq.com/collection/@codingwithfire/covid-explorations">COVID data</a>,
+          and <a href="https://observablehq.com/collection/@codingwithfire/election-explorations">Election data</a>.
+          I've analyzed data on medieval monks with my father by making 
+          <a href="https://bl.ocks.org/enjalot/35624de656351f8e4a5f">Tremulator</a> 
+          and explored how typing in Chinese works with
+          <a href="https://enjalot.github.io/pinyin/">Pinyin</a>.
+        </p>
+      </div>
+      <div class="project">
+        <img src="images/blocks.png">
+        <p>
+          Part of my process is building and sharing small experiments. I've got hundreds of
+          <a href="http://bl.ocks.org/enjalot">d3.js blocks</a>, <a href="http://observablehq.com/@enjalot">Observable notebooks</a> 
+          and <a href="https://observablehq.com/@codingwithfire">collaborations</a>
+          demonstrating various data visualization, UX and graphics techniques.
+        </p>
+      </div>
+
+
+
+      <div class="headline">Community Leadership</div>
       <div class="description">
-        I've always enjoyed bringing people together, especially when it comes to mixing my own interests in art and science.
-        <a href="https://d3js.org">d3.js</a> turns out to be a technology that attracts people with diverse backgrounds and open minds.
+        Learning complex technology is difficult, and I believe it is always better to learn together.
+      </div>
+      <div class="project">
+        <img src="images/d3.png">
+        <p>
+          Co-founded and co-organized the <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">Bay Area d3.js meetup</a>
+in 2012 which has grown to 5,000+ members in person and <a href="https://d3-slackin.herokuapp.com/">9,000+ online</a>. 
+Wrote several popular articles on D3 including 
+          <a href="https://observablehq.com/@enjalot/touring-the-d3-ecosystem">Touring the d3.js ecosystem</a>,
+          <a href="https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a">Hitchhiker's Guide to d3.js</a>,
+          <a href="https://medium.com/dailyjs/the-trouble-with-d3-4a84f7de011f">The Trouble with D3</a>,
+          and <a href="https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b">How do you learn d3.js?</a>
+        </p>
+      </div>
+      <div class="project">
+        <img src="images/d3unconf.jpg">
+        </a>
+        <p>
+          Co-founded and co-organized <a href="https://medium.com/@enjalot/d3-unconf-2014-e1377d6d72a7#.d22pxd932">the d3.js unconference</a> for 5 years. 
+          Each year a <a href="https://medium.com/@enjalot/d3-unconf-2016-recap-b3af91a65f00">100+ top d3.js</a> practitioners gathered to discuss, learn and advance d3.js together.
+        </p>
+      </div>
+      <div class="project">
+        <img src="images/youtube.webp">
+        <p>
+          I like to share my understanding on
+          <a href="https://www.youtube.com/user/enjalot">YouTube</a>
+            I've published more than covering various aspects of d3, data visualization, web cartography and graphics programming.
+        </p>
+      </div>
+      <div class="project">
+          <img src="images/observable.webp">
+          </a>
+          <p>
+            Produced, organized and hosted numerous events, workshops and live streams for the <a href="https://www.meetup.com/observablehq/">Observable Community</a>. 
+          </p>
+        </div>
 
-      </div>
-      <div id="community" class="section">
-        <div class="project2">
-          <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">
-            <span class="project-title2">
-              Bay Area d3.js meetup
-            </span>
-            <img src="images/d3meetup.png">
-          </a>
-          <p>
-            Co-founded the meetup in Feb. 2012 and have grown it to over 4,000 members today.
-            We <a href="https://www.youtube.com/playlist?list=PL-_RDR0qu9VKm1FOWUsV5WMXp0p70kWk5">record and post</a>
-             as many of the talks as we can.
-            <br>
-            The screenshot is a <a href="http://enjalot.github.io/1024/">visualization of our first 1,024 members</a>.
-          </p>
-        </div>
-        <div class="project2">
-          <a href="http://visfest.com/d3unconf">
-            <span class="project-title2">
-              d3.unconf
-            </span>
-            <img src="images/d3unconf.jpg">
-          </a>
-          <p>
-            Co-founded and co-organize this annual unconference where 100 d3.js practitioners
-             gather in San Francisco to discuss, learn and advance d3.js together.
-            <br>
-            Watch a <a href="https://www.youtube.com/watch?v=uIG6ox2d4JU">quick overview from 2015</a>
-            or read about organizing the <a href="https://medium.com/@enjalot/d3-unconf-2014-e1377d6d72a7#.d22pxd932">first one in 2014</a>
-          </p>
-        </div>
-      </div>
-
-
-      <div id="community2" class="section">
-        <div class="project2">
-          <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">
-            <span class="project-title2">
-              Talks & Workshops
-            </span>
-            <img src="images/iantalking.jpg">
-          </a>
-          <p>
-            I've given many
-            <a href="http://enjalot.github.io/talks/">talks</a>
-            and
-            <a href="http://enjalot.github.io/intro-d3/">workshops</a>
-            about d3.
-            My most well known workshop is available as an online course on
-             <a href="https://frontendmasters.com/courses/interactive-data-visualization-d3-js/">Frontend Masters</a>.
-          </p>
-        </div>
-        <div class="project2">
-          <a href="https://www.youtube.com/user/enjalot">
-            <span class="project-title2">
-              YouTube Tutorials
-            </span>
-            <img src="images/youtube.png">
-          </a>
-          <p>
-             I also like to share my understanding via short video tutorials and demos. I've got more than
-             <a href="https://www.youtube.com/user/enjalot">100 videos</a>
-             covering various aspects of d3, web mapping and graphics programming.
-          </p>
-        </div>
-      </div>
-
-      <div class="headline">Data visualization</div>
-      <div class="section description">
-        Data visualization is an exciting area to work in because it brings together
-        communication and complexity, aesthetics and automation.
-        There is art and science involved in crafting an effective visualization, which makes it consistently interesting.
-      </div>
-      <div id="datavis" class="section">
-        <div class="project2">
-          <a href="http://blog.interviewing.io/technical-interview-performance-is-kind-of-arbitrary-heres-the-data/">
-            <span class="project-title2">Interviewing.io blog post</span>
-            <img src="images/interviewingio.png">
-          </a>
-          <p>
-            Helped develop an interactive visualization to help explain a data story about interview performance for
-            <a href="http://interviewing.io">interviewing.io</a>. See how each <a href="http://bl.ocks.org/enjalot/4562ac558aa8fb77269c">(1)</a>
-            iteration <a href="http://bl.ocks.org/enjalot/78e3a730e77c677e168c">(2)</a>
-            evolves <a href="http://bl.ocks.org/enjalot/735e92664d7d427132b2">(3)</a>.
-          </p>
-        </div>
-        <div class="project2">
-          <a href="https://www.lever.co/blog/four-design-principles-that-built-lever-reports">
-            <span class="project-title2">
-              Lever
-            </span>
-            <img src="images/lever.jpg">
-          </a>
-          <p>
-            I was the first hire at <a href="https://lever.co">Lever</a> where I helped
-            <a href="https://www.youtube.com/watch?v=yBbQIeQVLl8&index=3&list=PLI_sHchSmdCBg8aUrPl8VLgbkUbr-OLDn">
-            design and build the data infrastructure</a>
-            for the app, as well as numerous product features including
-            <a href="https://www.lever.co/blog/four-design-principles-that-built-lever-reports">Reports</a>.
-          </p>
-        </div>
-      </div>
-      <div id="datavis2" class="section">
-        <div class="project2">
-          <a href="https://www.youtube.com/watch?v=uZrTT-IBAA4&index=4&list=PLI_sHchSmdCBg8aUrPl8VLgbkUbr-OLDn">
-            <span class="project-title2">
-              Tremulous Hand of Worcestor
-            </span>
-            <img src="images/tremor.png">
-          </a>
-          <p>
-          This is an ongoing research project I'm working on with my <a href="http://www.english.fsu.edu/faculty/djohnson.htm">father</a>.
-          He is studying annotations by a particular monk on medieval manuscripts, so I wrote an app to help him
-          <a href="https://github.com/enjalot/tremulator">collect data</a>
-          and
-          <a href="http://bl.ocks.org/enjalot/35624de656351f8e4a5f">visualize it</a>
-          </p>
-        </div>
-        <div class="project2">
-            <a href="http://enjalot.github.io/pinyin">
-              <span class="project-title2">
-                How pinyin works
-              </span>
-              <img src="images/pinyin.png">
-            </a>
-            <p>
-              我会写中文，在大学学的。I learned some Mandarin in college and spent a few summers in 天津 (Tianjin).
-              I'm fascinated by Chinese writing systems and their computational implications.
-            </p>
-        </div>
-      </div>
-
-      <div id="datavis3" class="section">
-        <div class="project2">
-          <a href="http://enjalot.github.io/bart/">
-            <span class="project-title2">
-              BART Strike
-            </span>
-            <img src="images/bart.png">
-          </a>
-          <p>
-            When BART service was stopped due to two strikes in 2013 I organized a series of meetups
-            to make visualizations that could help us understand the conflict.
-            A couple of the visualizations developed by participants were used in <a href="http://ww2.kqed.org/news/2013/10/17/data-visualization-BART-strike">news articles.</a>
-          </p>
-        </div>
-        <div class="project2">
-          <a href="http://bl.ocks.org/enjalot">
-            <span class="project-title2">
-              Experiments
-            </span>
-            <img src="images/blocks.png">
-          </a>
-          <p>
-            As I develop visualizations and learn new web programming techniques
-            I practice with small examples collected in my bl.ocks.
-            <br>
-            I've <a href="https://medium.com/@enjalot/enjalots-data-driven-journey-286f21d82fcd#.lrlg0onlm">written about my practice here</a>.
-          </p>
-        </div>
-      </div>
 
       <div class="headline">Future work</div>
       <div class="description">
@@ -266,12 +163,12 @@
         The following diagram attempts to capture where I'm most valuable in the process of creating a new product or visualization:
         <img src="images/process.jpg" style="max-width:100%;">
         <p>
-          I've found I am most effective early in the product-development process, especially in the <b>prototyping phase</b>.
-          The diagram shows the progression of an idea to <b>Minimum Viable Product</b> as I see it.
+          I've found I am most effective early in the product-development process, especially in the <b><a href="https://blog.prototypr.io/user-experience-engineering-a98c7724d849">prototyping phase</a></b>.
+          The diagram shows how I see the progression of an idea to Minimum Viable Product.
           Often times the first question to follow an interesting idea is "Could this work?", and my favorite thing to do is
           figuring out if it could. After figuring out that it does indeed work, the hard but neccessary part for me is developing
           the functional prototype into some sort of minimum viable state that can be consumed by other stake-holders in the project.
-          There is of course still a lot that needs to happen before a product can ship, but ideally I'm prototyping the next idea.
+          
         </p>
       </div>
       <div class="description">
