@@ -1,236 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">  
-  <!-- Primary Meta Tags --> <!-- this is the default metadata which all websites can draw on --> 
-  <title>Ian Johnson's Portfolio</title>
-  <meta name="title" content="Ian Johnson's Portfolio">
-  <meta name="description" content="Ian's past experiences and projects.">
-
-  <!-- Open Graph / Facebook --> <!-- this is what Facebook and other social websites will draw on -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ian Johnson</title>
+  <meta name="description" content="Ian Johnson (@enjalot) builds instruments for looking at data that is too large to read.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://enjalot.github.io">
-  <meta property="og:title" content="Ian Johnson's Portfolio">
-  <meta property="og:description" content="Ian's past experiences and projects.">
+  <meta property="og:title" content="Ian Johnson">
+  <meta property="og:description" content="Instruments for looking at data that is too large to read.">
   <meta property="og:image" content="https://enjalot.github.io/images/catdata.png">
-
-  <!-- Twitter --> <!-- You can have different summary for Twitter! -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://enjalot.github.io">
-  <meta property="twitter:title" content="Ian Johnson's Portfolio">
-  <meta property="twitter:description" content="@enjalot's past experiences and projects.">
-  <meta property="twitter:image" content="https://enjalot.github.io/images/catdata.png">
 
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-  <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-  <style></style>
+  <!-- The same page as markdown, for agents. Rebuild with: python3 tools/build_md.py -->
+  <link rel="alternate" type="text/markdown" href="index.md">
+
+  <link href="style.css" rel="stylesheet">
+  <!-- The dots are optional decor, loaded after the page. See lens/lens.js. -->
+  <link href="lens/lens.css" rel="stylesheet">
+  <script type="module" src="lens/lens.js"></script>
 </head>
 <body>
-  <div id="portfolio">
-    <div id="header">
-      <span class="title">
-        <img src="images/toon.jpg">
-        <span class="name">Ian Johnson</span>
-      </span>
-      &nbsp;&nbsp;&nbsp;
-      <span class="contact">
-        <a href="/resume">Resume (C.V.)</a>&nbsp;&nbsp;&nbsp; 
-        <a href="https://www.linkedin.com/in/iandavidjohnson">LinkedIn</a>&nbsp;&nbsp;&nbsp;
-        <a href="https://github.com/enjalot">GitHub</a>&nbsp;&nbsp;&nbsp;
-         &nbsp;&nbsp;&nbsp;
-        🐦 <a href="https://twitter.com/enjalot">@enjalot</a>&nbsp;&nbsp;&nbsp;
-        
-      </span>
-    </div>
-    <div id="content">
-      <!-- <div class="headline">Product Innovation</div> -->
-      <div class="tagline">
-        I help world-class product teams bridge UX Design and Scientific Computing.
+<div id="portfolio">
+
+  <header id="header">
+    <span class="title">
+      <img src="images/toon.jpg" alt="">
+      <span class="name">Ian Johnson</span>
+    </span>
+    <nav class="contact">
+      <a href="resume/">Resume</a>
+      <a href="https://github.com/enjalot">GitHub</a>
+      <a href="https://www.linkedin.com/in/iandavidjohnson">LinkedIn</a>
+      <a href="https://twitter.com/enjalot">@enjalot</a>
+    </nav>
+  </header>
+
+  <main id="content">
+
+    <section class="intro">
+      <p class="tagline">I build scientific instruments for data</p>
+      <p>Fifteen years of helping researchers, product leaders and organizations work directly with their data
+      </p>
+      <p class="hint">The dots behind this page are my tweets since 2008, highlighting in sync with each roll. Scroll to the end to explore the map.
+      </p>
+    </section>
+
+    <h2>Now</h2>
+
+    <section class="card" data-from="2025" data-to="2026">
+      <div class="job">
+        <a href="https://orbitalindustries.com" class="company">Orbital Industries</a>
+        <span class="role">Member of Technical Staff - Research Engineer</span>
+        <span class="dates">2025 to present</span>
       </div>
-      <div>
-        <div class="work">
-          <div class="job">
-            <a href="https://orbitalindustries.com"><span class="company">Orbital Industries</span></a>
-            <span>2025-Present</span>
-          </div>
-          <div class="description">
-            <a href="https://orbitalindustries.com" class="logo"><img src="images/orbital.svg"></a>
-              <ul>
-                <li>Leading an engineering team in designing & developing an agentic platform for material science & engineering.</li>
-                <li>Building tools and curating context to bridge teams and domains.</li>
-              </ul>
-          </div>
-        </div>
-        <div class="work">
-          <div class="job">
-            <a href="https://latentui.com"><span class="company">Latent Interfaces</span></a>
-            <span>2022-2025</span>
-          </div>
-          <div class="description">
-            <a href="https://latentui.com" class="logo"><img src="images/li_logo-transparent.png"></a>
-              <ul>
-                <li>Developing <a href="https://github.com/enjalot/latent-scope">Latent Scope</a>, an open-source tool for exploring unstructured data.</li>
-                <li>Building cutting edge data interfaces for industry leading research teams.</li>
-              </ul>
-          </div>
-        </div>
-        <div class="work">
-          <div class="job">
-            <span class="company">Observable</span>
-            <span>2020-2022</span>
-          </div>
-          <div class="description">
-            <a href="https://observablehq.com" class="logo"><img src="images/observable.webp"></a>
-              <ul>
-                <li>Developed features for simplifying complex data workflows.</li>
-                <li>Taught data visualization to thousands of data practitioners.</li>
-                <li>Built open source community and examples for d3.js and Observable Plot.</li>
-              </ul>
-          </div>
-        </div>
-        <div class="work">
-          <div class="job">
-            <span class="company">Google</span>
-            <span>2016-2020</span>
-          </div>
-          <div class="description">
-            <a href="https://google.com" class="logo"><img src="images/google.png"></a>
-            <ul>
-              <li>Developed data-driven tools supporting 300+ person design team.</li>
-              <li>Open-sourced 50 million Quick, Draw drawings with the Creative Lab</li>
-              <li>Co-authored 4 publications on <a href="https://distill.pub/2018/building-blocks">Distill</a>.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="work">
-          <div class="job">
-            <span class="company">Lever</span>
-            <span>2012-2015</span>
-          </div>
-          <div class="description">
-            <a href="https://lever.co" class="logo"><img src="images/lever.jpeg"></a>
-            <ul>
-              <li>First hire, founding software engineer.</li>
-              <li>Designed and built the original data infrastructure</li>
-              <li>Designed and built reporting features used by largest customers</li>
-              <li>Built internal tools still in use when acquired for $500m in 2022</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="headline">Open Source, Open Science & Open Data</div>
-
-      <div class="project">
-        <img src="images/distill.png">
-       <p>
-          <a href="https://distill.pub">Distill</a> was a scientific journal for publishing interactive Machine learning research. 
-
-          <br><br>While at Google I co-authored: 
-          </p>
+      <a href="https://orbitalindustries.com" class="logo"><img src="images/orbital.svg" alt="Orbital"></a>
       <ul>
-        <li><a href="https://distill.pub/2016/misread-tsne">How to Use t-SNE Effectively</a></li>
-        <li><a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a></li>
-        <li><a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a></li>
-        <li><a href="https://distill.pub/2019/activation-atlas">Activation Atlas</a></li>
-      </ul>  
-      </div>
+        <li>Designing and building an agentic platform for scientists and engineers.</li>
+        <li>Applying frontier AI to domain specific workflows.</li>
+        <li>Developing <a href="https://github.com/enjalot/moonshine">moonshine</a> an open-source tool for writing interactive explanations together with coding agents, in the spirit of Distill.</li>
+      </ul>
+    </section>
 
-      <div class="project">
-        <img src="images/cat.png">
-        <p>
-          At Google I helped the Creative Lab open source the <a href="https://quickdraw.withgoogle.com/data">Quick, Draw! dataset</a>. 
-
-          <br><br>This data was used to:
-          <ul>
-            <li>Write up an <a href="https://cloud.google.com/blog/products/gcp/drawings-in-the-cloud-introducing-the-quick-draw-dataset">Introduction to the Quick, Draw! Dataset</a></li>
-            <li>Work with Google Brain to demo the <a href="https://magenta.tensorflow.org/sketch-rnn-demo">SketchRNN</a> model.</li>
-            <li>Give a talk at <a href="https://openvisconf.com/">OpenVisConf</a> about <a href="https://medium.com/@enjalot/machine-learning-for-visualization-927a9dff1cab">Machine Learning for Visualization</a></li>
-          </ul>
-        </p>
-      </div>
-
+    <aside class="tweets">
+      <blockquote class="tweet" data-i="8159">
+        <video class="tweet-media" src="images/tweets/2111813743302582519.mp4" poster="images/tweets/2111813743302582519.jpg" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>i want new ways to look at lots of trajectories, currently exploring: - treemap laid out by groupings (metadata or computed) - colored by classification of success (or grouping) - sized by length - zoom in smoothly to see turns as beads on a string - extremely fast transcript…</p>
+        <cite><a href="https://twitter.com/enjalot/status/2111813743302582519">Oct 18, 2026</a> · 403 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="8050">
+        <video class="tweet-media" src="images/tweets/1999611221977514001.mp4" poster="images/tweets/1999611221977514001.webp" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>I just passed my 6 month mark at @OrbitalHardware and I'm excited to share my first public facing project! It's an interactive browser of 200k generated MOF structures, complete with latent space exploration and high-dimensional filtering with parallel coordinates 🗺️🔬 Let's…</p>
+        <cite><a href="https://twitter.com/enjalot/status/1999611221977514001">Dec 12, 2025</a> · 18 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="8144">
+        <video class="tweet-media" src="images/tweets/2077714157286089063.mp4" poster="images/tweets/2077714157286089063.webp" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>I've been using Moonshine a lot for work, which means theres been a ton of iteration on it. It's transformed into an article writing harness, helping me surgically remove slop from my technical communications. 🔪 Let's look at what the harness does!</p>
+        <cite><a href="https://twitter.com/enjalot/status/2077714157286089063">Jul 16, 2026</a> · 60 likes</cite>
+      </blockquote>
       
+      
+    </aside>
 
-      <div class="project">
-        <img src="images/tremor.png">
-        <p>
-          I love collecting, exploring and visualizing data! 
-          <br/> A selection of datasets I am proud of:
-          <ul>
-          <li><a href="https://observablehq.com/@observablehq/curated-datasets">Observable Curated Datasets</a></li> 
-          <li><a href="https://observablehq.com/@enjalot/california-fire-maps-workbook">Wildfire data</a></li>
-          <li><a href="https://observablehq.com/@enjalot/purpleair-historical-data">Air quality data</a></li>
-          <li><a href="https://observablehq.com/@codingwithfire/emojis">Emoji data</a></li>
-          <li><a href="https://observablehq.com/collection/@codingwithfire/covid-explorations">COVID data</a></li>
-          <li><a href="https://observablehq.com/collection/@codingwithfire/election-explorations">Election data</a></li>
-          <li><a href="https://bl.ocks.org/enjalot/35624de656351f8e4a5f">Medieval manuscript punctuation data</a> (in collaboration with my father)</li>
-          </ul>
-        </p>
+    <h2>Previous </h2>
+
+    <section class="card" data-from="2022" data-to="2025">
+      <div class="job">
+        <a href="https://latentui.com" class="company">Latent Interfaces</a>
+        <span class="role">Chief Data Alchemist</span>
+        <span class="dates">2022 to 2025</span>
       </div>
+      <a href="https://latentui.com" class="logo"><img src="images/li_logo-transparent.png" alt="Latent Interfaces"></a>
+      <ul>
+        <li><a href="https://github.com/enjalot/latent-scope">Latent Scope</a>
+          <button class="portal" data-lens="umap"></button>,
+          an open-source tool that embeds, maps, clusters and labels unstructured text so you can browse it as a map.</li>
+        <li><a href="https://enjalot.substack.com/p/latent-interfaces">A zoomable map</a> of the human genome laid out on a
+          Hilbert curve <button class="portal" data-lens="hilbert"></button>
+          so all 3 billion base pairs stay browsable at every scale.</li>
+        <li>Trained parse autoencoders for sentence embeddings available as a
+          <a href="https://enjalot.github.io/latent-taxonomy">browsable taxonomy</a> of their features.</li>
+        <li>Data interfaces for research teams, including Altius, Topology, ARC Prize and Stability AI.</li>
+        <li>Organized the <a href="https://hiddenstates.org/">Hidden States unconference</a> in San Francisco.</li>
+      </ul>
+    </section>
 
-      <div class="project">
-        <img src="images/blockbuilder2.png">
-        <p>
-          <a href="https://blockbuilder.org/">Block Builder</a> was an in-browser editor for quickly making, editing, remixing and sharing
-          d3.js code examples. Launched via Kickstarter it supported the curation of more than <a href="https://observablehq.com/@enjalot/blockbuilder-search-data">40,000 community examples</a>.
-          
-        </p>
+    <aside class="tweets">
+      <blockquote class="tweet" data-i="7838">
+        <video class="tweet-media" src="images/tweets/1859985404910510183.mp4" poster="images/tweets/1859985404910510183.webp" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>I am obsessed with Sparse Autoencoders! SAEs unpack so much existing value and unlock exciting new capabilities. It's happening in text, images and even proteins. This is a long thread with lots of links and quote tweets of the projects, articles and code that made me 🤯</p>
+        <cite><a href="https://twitter.com/enjalot/status/1859985404910510183">Nov 22, 2024</a> · 1434 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="7269">
+        <img class="tweet-media" src="images/tweets/1633142351697772544.webp" alt="" loading="lazy">
+        <p>I started a company! it's called Latent Interfaces and I see it as a vehicle for exploring latent spaces by building new kinds of data interfaces. I shared my first update on what we're doing in my newsletter: enjalot.substack.com/p/latent-inter…</p>
+        <cite><a href="https://twitter.com/enjalot/status/1633142351697772544">Mar 7, 2023</a> · 237 likes</cite>
+      </blockquote>
+      
+      <blockquote class="tweet" data-i="7560">
+        <img class="tweet-media" src="images/tweets/1786528924891025901.webp" alt="" loading="lazy">
+        <p>it took me ~5 minutes to embed, map and label my 10k tweets... the question is do i want to look in this mirror? enjalot.github.io/latent-scope/</p>
+        <cite><a href="https://twitter.com/enjalot/status/1786528924891025901">May 3, 2024</a> · 144 likes</cite>
+      </blockquote>
+    </aside>
+
+    <section class="card" data-from="2020" data-to="2022">
+      <div class="job">
+        <a href="https://observablehq.com" class="company">Observable</a>
+        <span class="role">Senior Data Visualization Developer</span>
+        <span class="dates">2020 to 2022</span>
       </div>
+      <a href="https://observablehq.com" class="logo"><img src="images/observable.webp" alt="Observable"></a>
+      <ul>
+        <li>Developed features and prototypes for simplifying complex data workflows.</li>
+        <li>Taught data visualization to thousands of data practitioners.</li>
+        <li>Collected and mapped data in public:
+          <a href="https://observablehq.com/@enjalot/california-fire-maps-workbook">wildfires</a>,
+          <a href="https://observablehq.com/@enjalot/purpleair-historical-data">air quality</a>,
+          <a href="https://observablehq.com/collection/@codingwithfire/covid-explorations">COVID</a>,
+          <a href="https://observablehq.com/collection/@codingwithfire/election-explorations">elections</a> and
+          <a href="https://observablehq.com/@codingwithfire/emojis">emoji</a>.</li>
+      </ul>
+    </section>
 
-      <div class="project">
-        <img src="images/blocks.png">
-        <p>
-          Part of my process is building and sharing small experiments. I've got hundreds of
-          <a href="http://bl.ocks.org/enjalot">d3.js blocks</a>, <a href="http://observablehq.com/@enjalot">Observable notebooks</a> 
-          and <a href="https://observablehq.com/@codingwithfire">collaborations</a>
-          demonstrating various data visualization, UX and graphics techniques.
-        </p>
+    <aside class="tweets">
+      <blockquote class="tweet" data-i="5693">
+        <p>woah! today was my first day at @observablehq and I am so excited 😆 if you've followed me at all, you know this is a dream job: making it easier to use / play / think with #d3js will be a big part of my focus... i mean, just look at this stuff! observablehq.com/@d3/gallery</p>
+        <cite><a href="https://twitter.com/enjalot/status/1285359085202706433">Jul 20, 2020</a> · 452 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="6712">
+        <img class="tweet-media" src="images/tweets/1398009942070661122.webp" alt="" loading="lazy">
+        <p>I am obsessed with Plot and I'm going to try and articulate why... I'll do this with some anecdotes and examples along with pointers to currently available resources. It's a very young library but it's already changing the way I make #dataviz dramatically observablehq.com/@observablehq/…</p>
+        <cite><a href="https://twitter.com/enjalot/status/1398009942070661122">May 27, 2021</a> · 214 likes</cite>
+      </blockquote>
+      
+      
+    </aside>
+
+    <section class="card" data-from="2016" data-to="2020">
+      <div class="job">
+        <a href="https://google.com" class="company">Google</a>
+        <span class="role">Senior UX Engineer</span>
+        <span class="dates">2016 to 2020</span>
       </div>
+      <a href="https://google.com" class="logo"><img src="images/google.png" alt="Google"></a>
+      <ul>
+        <li>Co-authored four articles on <a href="https://distill.pub">Distill</a>:
+          <a href="https://distill.pub/2016/misread-tsne">How to Use t-SNE Effectively</a>,
+          <a href="https://distill.pub/2016/handwriting/">Four Experiments in Handwriting with a Neural Network</a>,
+          <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a> and
+          <a href="https://distill.pub/2019/activation-atlas">Activation Atlas</a>.</li>
+        <li>Helped the Creative Lab open source 50 million drawings as the
+          <a href="https://quickdraw.withgoogle.com/data">Quick, Draw! dataset</a>,
+          and worked with Google Brain on the <a href="https://magenta.tensorflow.org/sketch-rnn-demo">sketch-rnn</a> demo.</li>
+        <li>Gave <a href="https://medium.com/@enjalot/machine-learning-for-visualization-927a9dff1cab">Machine Learning for Visualization</a>
+          at OpenVisConf 2018 (<a href="https://www.youtube.com/watch?v=6n-kCYn0zxU">video</a>). It is still the project that motivates the rest.</li>
+        <li>Built data tools for the 300-person Google Cloud design team. In the largest one we treated user
+          sessions as sequences, trained an RNN on them, then clustered and mapped the results to learn how
+          people use different products together. It was the sketch-rnn idea pointed at product usage.</li>
+      </ul>
+    </section>
 
+    <aside class="tweets">
+      <blockquote class="tweet" data-i="5025">
+        <p>I transcribed my @OpenVisConf talk about #MachineLearning for #Visualization so you can peruse the drawings and figures at your own pace. medium.com/@enjalot/machi… I'm really excited about the techniques I go over here, looking forward to sharing more of this kind of work soon!</p>
+        <cite><a href="https://twitter.com/enjalot/status/1045797207079677952">Sep 28, 2018</a> · 250 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="4908">
+        <video class="tweet-media" src="images/tweets/971116427598950400.mp4" poster="images/tweets/971116427598950400.webp" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>Beyond excited to share the latest @distillpub article: Building Blocks of Interpretability distill.pub/2018/building-… An epic collaboration with @ch402 @arvindsatya1 @shancarter @ludwigschubert @hypotext and @zzznah introducing exciting techniques for looking deeper into ML models</p>
+        <cite><a href="https://twitter.com/enjalot/status/971116427598950400">Mar 6, 2018</a> · 196 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="4753">
+        <video class="tweet-media" src="images/tweets/865264231356047362.mp4" poster="images/tweets/865264231356047362.webp" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>with 50,000,000 doodles the #quickdraw collection is the cutest big dataset ever! peruse and download it yourself at quickdraw.withgoogle.com/data</p>
+        <cite><a href="https://twitter.com/enjalot/status/865264231356047362">May 18, 2017</a> · 110 likes</cite>
+      </blockquote>
+      
+    </aside>
 
-
-      <div class="headline">Community Leadership</div>
-      <div class="project2">
-        <img src="images/d3.png">
-        <p>
-          Co-founded and co-organized the <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">Bay Area d3.js meetup</a>
-in 2012 which has grown to 5,000+ members in person and <a href="https://d3-slackin.herokuapp.com/">9,000+ online</a>. 
-Wrote several popular articles on D3 including:
-        <ul>
-          <li><a href="https://observablehq.com/@enjalot/touring-the-d3-ecosystem">Touring the d3.js ecosystem</a></li>
-          <li><a href="https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a">Hitchhiker's Guide to d3.js</a></li>
-          <li><a href="https://medium.com/dailyjs/the-trouble-with-d3-4a84f7de011f">The Trouble with D3</a></li>
-          <li><a href="https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b">How do you learn d3.js?</a></li>
-        </ul>
-        </p>
+    <section class="card" data-from="2012" data-to="2015">
+      <div class="job">
+        <a href="https://lever.co" class="company">Lever</a>
+        <span class="role">Founding Engineer</span>
+        <span class="dates">2012 to 2015</span>
       </div>
-      <div class="project2">
-        <img src="images/d3unconf.jpg">
-        </a>
-        <p>
-          Co-founded and co-organized <a href="https://medium.com/@enjalot/d3-unconf-2014-e1377d6d72a7#.d22pxd932">the d3.js unconference</a> for 5 years. 
-          Each year a <a href="https://medium.com/@enjalot/d3-unconf-2016-recap-b3af91a65f00">100+ top d3.js</a> practitioners gathered to discuss, learn and advance d3.js together.
-        </p>
-      </div>
-      <div class="project2">
-        <img src="images/youtube.webp">
-        <p>
-          I like to share my understanding on
-          <a href="https://www.youtube.com/user/enjalot">YouTube</a>
-            I've published more than covering various aspects of d3, data visualization, web cartography and graphics programming.
-        </p>
-      </div>
-      <div class="project2">
-          <img src="images/observable.webp">
-          </a>
-          <p>
-            Produced, organized and hosted numerous events, workshops and live streams for the <a href="https://www.meetup.com/observablehq/">Observable Community</a>. 
-          </p>
-        </div>
+      <a href="https://lever.co" class="logo"><img src="images/lever.jpeg" alt="Lever"></a>
+      <ul>
+        <li>First hire and founding software engineer.</li>
+        <li>Designed and built the original data infrastructure, the reporting features used by the largest customers, and the internal query tools.</li>
+        <li>Evolved versions of those were still in use when Lever was acquired for $500m in 2022.</li>
+      </ul>
+    </section>
 
-    </div>
-  </div>
+    <aside class="tweets">
+      
+      <blockquote class="tweet" data-i="2878">
+        <p>don't let the data drive you enja.org/2014/07/27/don… how i'm thinking about data collection and reporting at @lever</p>
+        <cite><a href="https://twitter.com/enjalot/status/493807298624512000">Jul 28, 2014</a> · 3 likes</cite>
+      </blockquote>
+      
+      <blockquote class="tweet" data-i="2949">
+        <p>proud of the team I work with @lever, and looking forward to growing it with our Series A funding! blog.lever.co/the-next-chapt…</p>
+        <cite><a href="https://twitter.com/enjalot/status/517730964194095105">Oct 2, 2014</a> · 2 likes</cite>
+      </blockquote>
+    </aside>
+
+    <section class="card" data-from="2012" data-to="2019">
+      <div class="job">
+        <span class="company">The d3.js community</span>
+        <span class="role">Organizer</span>
+        <span class="dates">2012 to 2019</span>
+      </div>
+      <a href="https://d3js.org" class="logo"><img src="images/d3.png" alt="d3.js"></a>
+      <ul>
+        <li>Built Tributary, a live-coding environment for d3.js,
+          and then <a href="https://blockbuilder.org/">Blockbuilder</a>, an in-browser editor funded on Kickstarter, with
+          <a href="https://observablehq.com/@enjalot/blockbuilder-search-data">search over 40,000 community examples</a>.</li>
+        <li>Co-founded the <a href="http://www.meetup.com/Bay-Area-d3-User-Group/">Bay Area d3.js meetup</a> in 2012, which grew past 5,000 members, and
+          co-organized <a href="https://medium.com/@enjalot/d3-unconf-2016-recap-b3af91a65f00">d3.unconf</a> for five years.</li>
+        <li>Wrote <a href="https://medium.com/@enjalot/the-hitchhikers-guide-to-d3-js-a8552174733a">The Hitchhiker's Guide to d3.js</a>,
+          <a href="https://medium.com/dailyjs/the-trouble-with-d3-4a84f7de011f">The Trouble with D3</a>,
+          <a href="https://medium.com/@enjalot/how-do-you-learn-d3-js-ccffc151419b">How do you learn d3.js?</a> and
+          <a href="https://observablehq.com/@enjalot/touring-the-d3-ecosystem">Touring the D3 Ecosystem</a>.</li>
+        <li>Hundreds of small experiments as <a href="http://bl.ocks.org/enjalot">blocks</a>,
+          <a href="https://observablehq.com/@enjalot">notebooks</a> and
+          <a href="https://www.youtube.com/user/enjalot">videos</a>.</li>
+      </ul>
+    </section>
+
+    <aside class="tweets">
+      <blockquote class="tweet" data-i="4751">
+        <p>I present to you The Hitchhiker's Guide to #d3js medium.com/@enjalot/the-h… happy learning and don't forget your towel!</p>
+        <cite><a href="https://twitter.com/enjalot/status/863061673711501312">May 12, 2017</a> · 549 likes</cite>
+      </blockquote>
+      <blockquote class="tweet" data-i="4149">
+        <video class="tweet-media" src="images/tweets/701816227862171648.mp4" poster="images/tweets/701816227862171648.webp" autoplay="" loop="" muted="" playsinline=""></video>
+        <p>search more than 11,000 #d3js blocks: blockbuilder.org/search more details on how &amp; why: medium.com/@enjalot/searc…</p>
+        <cite><a href="https://twitter.com/enjalot/status/701816227862171648">Feb 22, 2016</a> · 151 likes</cite>
+      </blockquote>
+      
+      
+    </aside>
+
+    <h2>Where it started</h2>
+
+    <section class="card" data-from="2003" data-to="2012">
+      <div class="job">
+        <span class="company">Florida State University and before</span>
+        <span class="role">Student</span>
+        <span class="dates">2003 to 2012</span>
+      </div>
+      <ul>
+        <li>M.A. in <a href="https://www.sc.fsu.edu/">Scientific Computing</a> <button class="portal" data-lens="ode"></button> at FSU. My thesis put a <a href="https://github.com/enjalot/EnjaParticles">GPU fluid simulation</a>
+          (<a href="https://enjalot.github.io/moonshine/sph/index.html">smoothed particle hydrodynamics</a> <button class="portal" data-lens="fluid"></button>)
+          inside the Blender Game Engine, and I wrote the <a href="https://github.com/enjalot/adventures_in_opencl">Adventures in OpenCL</a> tutorials along the way.</li>
+        <li>Summer internship at <a href="https://www.lbl.gov/">Lawrence Berkeley National Lab</a></li>
+        <li>GIS web programming at <a href="https://freac.fsu.edu/">FREAC</a>, building open-source versions of Esri maps with PostGIS and OpenLayers.</li>
+        <li><a href="https://micro.magnet.fsu.edu/">Molecular Expressions</a> is where I first learned to program visualizations: interactive tutorials about
+          how microscopes work, after a high school spent taking pictures through them.</li>
+      </ul>
+    </section>
+
+    <aside class="tweets">
+      
+      <blockquote class="tweet" data-i="237">
+        <p>new video demoing my latest work in bring fluids to the #blender game engine with #opencl http://bit.ly/ewcB7R</p>
+        <cite><a href="https://twitter.com/enjalot/status/53474355740553216">Mar 31, 2011</a> · 1 like</cite>
+      </blockquote>
+      
+      <blockquote class="tweet" data-i="266">
+        <p>got my first pull request on my #opencl tutorials http://bit.ly/advcl it was minor, but it gives me a tingly feeling to be part of OSS</p>
+        <cite><a href="https://twitter.com/enjalot/status/60798848481767425">Apr 20, 2011</a> · 1 like</cite>
+      </blockquote>
+    </aside>
+
+  </main>
+
+  <!-- Shown only while the dots are on. lens/field.js fills the caption and reads taps here. -->
+  <section id="explore">
+    <h2>The map</h2>
+    <p class="explore-caption">Every dot is one of my tweets since 2008.</p>
+    <div class="explore-legend">2008 <i></i> 2026 · hover or tap a dot to read it</div>
+    <div class="explore-pane"></div>
+  </section>
+
+</div>
 </body>
 </html>

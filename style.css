@@ -1,155 +1,99 @@
+/* The plain page. No fonts or scripts are needed to read it. */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --text-2: #555555;
+  --link: #2a6fdb;
+  --card: #ffffff;
+  --card-shadow: 0px 7px 20px 3px rgba(10, 128, 128, 0.1);
+  --rule: #e4e4e4;
+  --body-font: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --head-font: var(--body-font);
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
 body {
-  padding: 20px;
-  padding-bottom: 50px;
   margin: 0;
-  color: #000000;
-  font-family: Roboto, sans-serif;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.name {
-  font-weight: bold;
-  font-size: 55px;
-  padding: 0px 20px;
-  margin-left: 50px;
-}
-.title img {
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 12px;
-  height: 40px;
-}
-.contact {
-  padding: 0px 20px;
-
-}
-.tagline {
-  margin-top: 32px;
-}
-#header {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #111;
-  border-radius: 2px;
+  padding: 20px 16px 80px;
+  color: var(--text);
+  font-family: var(--body-font);
   font-size: 18px;
+  line-height: 1.5;
 }
+#portfolio {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  margin: 0 auto;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-#contact {
-  display:flex;
-  align-items: center;
-}
-#content {
-  height: calc(100% - 60px);
-}
-.section {
+#header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 8px 24px;
 }
+.title { display: flex; align-items: center; gap: 14px; }
+.title img { height: 44px; border-radius: 3px; }
+.name { font-weight: bold; font-size: 44px; line-height: 1.1; font-family: var(--head-font); }
+.contact { display: flex; flex-wrap: wrap; gap: 6px 20px; }
 
-.headline {
-  font-size: 36px;
-  margin-top: 60px;
-  margin-left: 13px;
+.intro { margin-top: 28px; padding: 4px 0; }
+.tagline { font-size: 28px; line-height: 1.25; margin: 0 0 14px; font-family: var(--head-font); }
+.intro p { margin: 0 0 12px; max-width: 46em; }
+.hint { color: var(--text-2); font-size: 15px; }
+.hint { display: none; }
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 52px 0 0 4px;
+  font-family: var(--head-font);
 }
-.work {
-  margin-top: 36px;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  box-shadow: 0px 7px 20px 3px rgba(10, 128, 128, 0.1);
+.card {
+  position: relative;
+  margin-top: 28px;
+  padding: 22px 24px;
+  background: var(--card);
+  box-shadow: var(--card-shadow);
   border-radius: 3px;
 }
-.work p {
-  margin-top: 12px;
-  margin-left: 56px;
-  align-self: center;
-}
-.logo {
-  padding-top: 18px;
-}
-.logo img {
-  width: 72px;
-}
+.card::after { content: ''; display: block; clear: both; }
 .job {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 2px 16px;
   font-weight: bold;
 }
-.company {
-  text-align: left;
-}
-.description {
-  display: flex;
-  flex-direction: row;
-}
+.role { font-weight: normal; color: var(--text-2); margin-right: auto; }
+.role:empty { display: none; }
+.logo { float: left; margin: 18px 20px 8px 0; }
+.logo img { width: 64px; display: block; }
+.card ul { margin: 14px 0 0; padding-left: 20px; overflow: hidden; }
+.card li { margin: 6px 0; }
 
-/* .project {
-  width: 400px;
-  min-height: 400px;
-  margin-top: 45px;
-  line-height: 25px;
+/* A few of my tweets from each job, between the cards. */
+/* Shown only with the dots on (lens.css). */
+.tweets { display: none; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 28px; }
+.tweet {
+  margin: 0; padding: 10px 14px; border-left: 3px solid var(--rule); border-radius: 0 6px 6px 0;
+  background: var(--panel, transparent); font-size: 14px; line-height: 1.45; overflow-wrap: anywhere;
 }
-.project img {
-  width: 450px;
-  margin-top: 10px;
-} */
+.tweet p { margin: 0 0 6px; }
+.tweet-media { display: block; width: 100%; max-height: 220px; object-fit: cover; border-radius: 4px; margin: 2px 0 8px; background: var(--rule); }
+.tweet cite { font-style: normal; font-size: 12px; color: var(--text-2); }
 
-.project, .project2 {
-  /* display: flex; */
-  /* flex-direction: row; */
-  margin: 44px 5px;
-  padding: 12px;
-  min-height: 200px;
-  /* box-shadow: 0px 7px 20px 3px rgba(128, 10, 128, 0.1); */
-  box-shadow: 0px 7px 20px 3px rgba(8, 8, 8, 0.1);
-  border-radius: 3px;
-}
-.project2 {
-  /* box-shadow: 0px 7px 20px 3px rgba(128, 128, 10, 0.1); */
-}
 
-.project img, .project2 img {
-  float: right;
-  width: 128px;
-  height: fit-content;
-  /* box-shadow: 0px 7px 20px 3px rgba(100, 100, 100, 0.8); */
-}
-
-.project p, .project2 p {
-  margin-top: 12px;
-  margin-left: 16px;
-  align-self: center;
-}
-
-#portfolio {
-  width: 960px;
-}
-#potfolio a {
-  color: #4488ff;
-  text-decoration: none;
-}
-#potfolio a:visited {
-  color: #4488ff;
-  text-decoration: none;
-}
-#potfolio a:hover { text-decoration: underline; }
-
-#content {
-  font-size: 24px;
-}
-@media (max-width: 960px) {
-  #portfolio {
-    width: 100%;
-  }
-  
-  .section {
-    display: block;
-  }
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .name { font-size: 34px; }
+  .tagline { font-size: 23px; }
+  .card { padding: 18px 16px; }
+  .logo img { width: 44px; }
+  .logo { margin: 14px 14px 4px 0; }
+  h2 { font-size: 25px; margin-top: 40px; }
 }

@@ -1,0 +1,155 @@
+body {
+  padding: 20px;
+  padding-bottom: 50px;
+  margin: 0;
+  color: #000000;
+  font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-weight: bold;
+  font-size: 55px;
+  padding: 0px 20px;
+  margin-left: 50px;
+}
+.title img {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 12px;
+  height: 40px;
+}
+.contact {
+  padding: 0px 20px;
+
+}
+.tagline {
+  margin-top: 32px;
+}
+#header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #111;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+#contact {
+  display:flex;
+  align-items: center;
+}
+#content {
+  height: calc(100% - 60px);
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline {
+  font-size: 36px;
+  margin-top: 60px;
+  margin-left: 13px;
+}
+.work {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 0px 7px 20px 3px rgba(10, 128, 128, 0.1);
+  border-radius: 3px;
+}
+.work p {
+  margin-top: 12px;
+  margin-left: 56px;
+  align-self: center;
+}
+.logo {
+  padding-top: 18px;
+}
+.logo img {
+  width: 72px;
+}
+.job {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.company {
+  text-align: left;
+}
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+/* .project {
+  width: 400px;
+  min-height: 400px;
+  margin-top: 45px;
+  line-height: 25px;
+}
+.project img {
+  width: 450px;
+  margin-top: 10px;
+} */
+
+.project, .project2 {
+  /* display: flex; */
+  /* flex-direction: row; */
+  margin: 44px 5px;
+  padding: 12px;
+  min-height: 200px;
+  /* box-shadow: 0px 7px 20px 3px rgba(128, 10, 128, 0.1); */
+  box-shadow: 0px 7px 20px 3px rgba(8, 8, 8, 0.1);
+  border-radius: 3px;
+}
+.project2 {
+  /* box-shadow: 0px 7px 20px 3px rgba(128, 128, 10, 0.1); */
+}
+
+.project img, .project2 img {
+  float: right;
+  width: 128px;
+  height: fit-content;
+  /* box-shadow: 0px 7px 20px 3px rgba(100, 100, 100, 0.8); */
+}
+
+.project p, .project2 p {
+  margin-top: 12px;
+  margin-left: 16px;
+  align-self: center;
+}
+
+#portfolio {
+  width: 960px;
+}
+#potfolio a {
+  color: #4488ff;
+  text-decoration: none;
+}
+#potfolio a:visited {
+  color: #4488ff;
+  text-decoration: none;
+}
+#potfolio a:hover { text-decoration: underline; }
+
+#content {
+  font-size: 24px;
+}
+@media (max-width: 960px) {
+  #portfolio {
+    width: 100%;
+  }
+  
+  .section {
+    display: block;
+  }
+}

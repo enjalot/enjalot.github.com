@@ -1,0 +1,134 @@
+/* The particle field, the lens bar and the portals. None of this is needed to
+   read the page: it applies only once lens.js has run, and the dark skin only
+   while a lens is on (<html data-lens="...">). */
+
+/* ---- the skin while the dots are showing --------------------------------- */
+[data-lens] {
+  --bg: #090b18; --text: #eceaf4; --text-2: #b3b1c9; --link: #ffb454; --rule: rgba(255, 255, 255, 0.16);
+  --card: rgba(16, 18, 38, 0.94); --card-shadow: 0 0 0 1px rgba(255, 255, 255, 0.09); --panel: rgba(9, 11, 24, 0.8);
+  color-scheme: dark;
+}
+[data-lens] .logo img { background: #fff; border-radius: 6px; padding: 4px; }
+[data-lens] #header, [data-lens] .intro { background: var(--panel); border-radius: 6px; }
+[data-lens] #header { padding: 8px 12px; margin: -8px -12px 0; }
+[data-lens] .intro { padding: 12px; margin-left: -12px; margin-right: -12px; }
+[data-lens] h2 { display: table; background: var(--panel); padding: 2px 12px; margin-left: -8px; border-radius: 6px; }
+.js body { padding-bottom: 110px; }
+[data-lens] .hint { display: block; }
+[data-lens] .tweets:has(.tweet) { display: grid; }
+
+/* ---- stage --------------------------------------------------------------- */
+#lens-stage { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; background: var(--bg); }
+#lens-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#lens-over { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+html:not([data-lens]) #lens-stage, html:not([data-lens]) .field-tip { display: none; }
+
+.field-labels span {
+  position: absolute; left: 0; top: 0; white-space: nowrap; opacity: 0; transition: opacity 0.8s;
+  font: 600 12px system-ui, sans-serif; color: #fff; text-shadow: 0 0 4px #000, 0 0 10px #000;
+}
+.field-labels.on span { opacity: 0; } /* cluster names only show in the map at the end */
+.exploring .field-labels.on span { opacity: 0.95; }
+.field-labels span.yr { font: 600 11px ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(9, 11, 24, 0.75); padding: 0 4px; border-radius: 3px; text-shadow: none; }
+.field-labels.on span.yr { opacity: 0.9; }
+.field-labels.on span.yr.dim { opacity: 0.2; }
+.field-labels.far span, .field-labels.on.far span.yr { opacity: 0; }
+
+.field-tip {
+  position: fixed; z-index: 45; width: min(300px, calc(100vw - 20px)); padding: 9px 11px; border-radius: 6px; display: none;
+  font: 13px/1.4 system-ui, sans-serif; background: #fff; color: #111; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+  pointer-events: none; overflow-wrap: anywhere;
+}
+.field-tip.on { display: block; }
+.field-tip.pinned { pointer-events: auto; }
+.field-tip b { display: block; font-size: 11px; color: #555; margin-bottom: 2px; }
+.field-tip a { color: #8b0aa5; }
+.field-tip img { display: block; max-width: 100%; max-height: 160px; border-radius: 4px; margin: 4px 0 6px; }
+
+/* ---- the map at the end of the page -------------------------------------- */
+#explore { display: none; }
+[data-lens] #explore { display: block; }
+.explore-caption { max-width: 46em; margin: 14px 0 0; padding: 10px 12px; border-radius: 6px; background: var(--panel); color: var(--text-2); font-size: 15px; line-height: 1.45; }
+.explore-legend { display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; padding: 4px 10px; border-radius: 6px; background: var(--panel); color: var(--text-2); font: 12px ui-monospace, Menlo, monospace; }
+.explore-legend i { display: block; width: 150px; height: 8px; border-radius: 4px; }
+.explore-pane { height: calc(100vh - 150px); min-height: 380px; margin: 0 calc(50% - 50vw); cursor: crosshair; touch-action: pan-y; }
+
+/* ---- the bar ------------------------------------------------------------- */
+#lens-bar {
+  position: fixed; left: 50%; bottom: 12px; z-index: 40; transform: translateX(-50%);
+  display: flex; gap: 2px; padding: 4px; border-radius: 999px; max-width: calc(100vw - 16px);
+  background: #111; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+#lens-bar button {
+  display: inline-flex; align-items: center; gap: 6px; padding: 7px 11px; border: 0; border-radius: 999px;
+  background: transparent; color: #bbb; font: 13px system-ui, sans-serif; cursor: pointer; white-space: nowrap;
+}
+#lens-bar a { display: inline-flex; align-items: center; padding: 7px 11px; margin-left: 2px; border-left: 1px solid #444; color: #bbb; font: 13px system-ui, sans-serif; text-decoration: none; white-space: nowrap; }
+#lens-bar button:hover, #lens-bar a:hover { color: #fff; }
+#lens-bar button[aria-pressed='true'] { background: #fff; color: #111; }
+@media (max-width: 480px) { #lens-bar button, #lens-bar a { padding: 8px 7px; gap: 4px; font-size: 12px; } #lens-bar button:not(.plain) span { display: none; } #lens-bar button:not(.plain) { padding: 8px 10px; } }
+
+/* ---- portals ------------------------------------------------------------- */
+.portal { display: none; }
+.js .portal {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px; padding: 0; margin: 0 1px; vertical-align: -4px;
+  border: 1px solid currentColor; border-radius: 50%;
+  background: transparent; color: var(--link); cursor: pointer;
+  transition: transform 0.15s, background 0.15s, color 0.15s;
+  animation: portal-ring 3.2s ease-out infinite;
+}
+.js .portal:hover, .js .portal:focus-visible { transform: scale(1.3); background: var(--link); color: var(--bg); outline: none; }
+@keyframes portal-ring {
+  0%, 60% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--link) 45%, transparent); }
+  100% { box-shadow: 0 0 0 9px transparent; }
+}
+@media (prefers-reduced-motion: reduce) { .js .portal { animation: none; } }
+
+.portal-pop {
+  position: fixed; z-index: 60; width: 208px; pointer-events: none;
+  opacity: 0; transform: scale(0.15); transform-origin: var(--ox, 50%) var(--oy, 100%);
+  transition: transform 0.24s cubic-bezier(0.2, 0.9, 0.3, 1.15), opacity 0.14s;
+}
+.portal-pop.on { opacity: 1; transform: none; }
+.portal-pop-stage {
+  width: 208px; height: 208px; border-radius: 50%; overflow: hidden; background: #090b18;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.35), 0 0 0 2px #111, 0 0 0 5px #fff;
+}
+.portal-pop-label {
+  margin-top: 12px; padding: 6px 10px; border-radius: 6px; text-align: center;
+  font: 13px/1.35 system-ui, sans-serif; background: #111; color: #fff; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+.portal-pop-label b { display: block; }
+
+::view-transition-old(root) { animation: none; }
+::view-transition-new(root) { animation: portal-open 0.7s cubic-bezier(0.5, 0, 0.3, 1) both; }
+@keyframes portal-open {
+  from { clip-path: circle(0 at var(--px, 50%) var(--py, 50%)); }
+  to { clip-path: circle(150vmax at var(--px, 50%) var(--py, 50%)); }
+}
+
+/* ---- the ODE formula editor ---------------------------------------------- */
+.ode-panel {
+  position: fixed; left: 12px; bottom: 64px; z-index: 39; width: min(430px, calc(100vw - 24px)); padding: 8px 10px;
+  border-radius: 8px; background: rgba(12, 14, 30, 0.94); color: #eceaf4; box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14), 0 6px 24px rgba(0, 0, 0, 0.4);
+  font: 13px/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+.ode-head { display: flex; gap: 6px; align-items: center; }
+.ode-head select { flex: 1; min-width: 0; }
+.ode-panel select, .ode-panel button, .ode-panel input {
+  font: inherit; color: inherit; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 4px; padding: 2px 8px;
+}
+.ode-panel select option { color: #111; }
+.ode-panel button { cursor: pointer; }
+.ode-eqs { margin-top: 6px; }
+.ode-eq { display: flex; gap: 8px; align-items: baseline; }
+.ode-rhs { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; white-space: pre-wrap; }
+.ode-rhs { display: block; }
+.ode-eq i { flex: none; font-style: normal; color: #b3b1c9; }
+.ode-eq input { width: 100%; font-size: 16px; }
+.ode-foot { display: flex; justify-content: space-between; gap: 12px; color: #b3b1c9; }
+.ode-err { color: #ff8a80; text-align: right; }
+.ode-panel.min .ode-eqs, .ode-panel.min .ode-foot { display: none; }
+.scrub { color: #ffb454; border-bottom: 2px dotted #ffb454; cursor: ew-resize; padding: 0 2px; touch-action: none; user-select: none; -webkit-user-select: none; }
+.scrub.on { background: rgba(255, 180, 84, 0.25); }
