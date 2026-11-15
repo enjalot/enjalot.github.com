@@ -76,17 +76,25 @@ h2 {
 .card ul { margin: 14px 0 0; padding-left: 20px; overflow: hidden; }
 .card li { margin: 6px 0; }
 
-/* A few of my tweets from each job, between the cards. */
-/* Shown only with the dots on (lens.css). */
-.tweets { display: none; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin-top: 28px; }
+/* A few of my tweets from each job, between the cards. Shown only with the
+   dots on (lens.css). Every one is the same size: a thumbnail, two lines of
+   text and the date. The whole card links to the tweet. */
+.tweets { display: none; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
 .tweet {
-  margin: 0; padding: 10px 14px; border-left: 3px solid var(--rule); border-radius: 0 6px 6px 0;
-  background: var(--panel, transparent); font-size: 14px; line-height: 1.45; overflow-wrap: anywhere;
+  position: relative; margin: 0; padding-bottom: 8px; border-radius: 6px; overflow: hidden;
+  background: var(--panel, transparent); font-size: 13px; line-height: 1.4;
 }
-.tweet p { margin: 0 0 6px; }
-.tweet-media { display: block; width: 100%; max-height: 220px; object-fit: cover; border-radius: 4px; margin: 2px 0 8px; background: var(--rule); }
-.tweet cite { font-style: normal; font-size: 12px; color: var(--text-2); }
-
+.tweet-media {
+  display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--rule);
+  filter: grayscale(1); opacity: 0.8; transition: filter 0.2s, opacity 0.2s;
+}
+.tweet:hover .tweet-media, .tweet:focus-within .tweet-media { filter: none; opacity: 1; }
+.tweet p {
+  margin: 8px 10px 3px; overflow: hidden; overflow-wrap: anywhere;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+}
+.tweet cite { display: block; margin: 0 10px; font-style: normal; font-size: 12px; color: var(--text-2); }
+.tweet cite a::after { content: ''; position: absolute; inset: 0; }
 
 @media (max-width: 560px) {
   body { font-size: 16px; }
@@ -96,4 +104,10 @@ h2 {
   .logo img { width: 44px; }
   .logo { margin: 14px 14px 4px 0; }
   h2 { font-size: 25px; margin-top: 40px; }
+  /* on a phone each tweet is a row: thumbnail on the left, text on the right */
+  .tweets { grid-template-columns: 1fr; gap: 8px; }
+  .tweet { display: grid; grid-template-columns: 112px minmax(0, 1fr); align-content: center; padding: 0; min-height: 76px; }
+  .tweet-media { grid-row: 1 / 3; width: 112px; height: 76px; aspect-ratio: auto; }
+  .tweet p { margin: 8px 10px 2px 10px; align-self: end; }
+  .tweet cite { align-self: start; }
 }

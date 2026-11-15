@@ -28,9 +28,9 @@ css.textContent = `
 .editing [contenteditable]:focus { outline: 2px solid var(--link); }
 .editing .job .role { display: inline-block; min-width: 3em; }
 .editing .job .role:empty::before { content: 'role'; opacity: .45; }
-.editing .tweet { position: relative; padding-right: 34px; }
-.edit-x { position: absolute; top: 4px; right: 4px; width: 26px; height: 26px; border-radius: 50%; border: 1px solid currentColor;
-  background: transparent; color: inherit; font: 16px/1 system-ui, sans-serif; cursor: pointer; opacity: .7; }
+.editing .tweet cite a::after { display: none; } /* the card is not a link while editing */
+.edit-x { position: absolute; z-index: 2; top: 4px; right: 4px; width: 26px; height: 26px; border-radius: 50%; border: 1px solid currentColor;
+  background: #111; color: #fff; font: 16px/1 system-ui, sans-serif; cursor: pointer; opacity: .85; }
 .edit-x:hover { opacity: 1; background: #c0392b; color: #fff; border-color: #c0392b; }
 `
 document.head.append(css)
